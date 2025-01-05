@@ -1,11 +1,8 @@
-from flask import Flask, request, jsonify, render_template, redirect, url_for, Response
-from pymongo import MongoClient
-import gridfs
-from bson import ObjectId  # Import ObjectId for MongoDB ObjectID manipulation
-from datetime import datetime
-
-from flask import Flask, request, jsonify, render_template, redirect, url_for, Response, session, flash
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 from flask_bcrypt import Bcrypt
+import secrets
+import os
+
 # Initialize Flask-Bcrypt
 app = Flask(__name__)
 import secrets
